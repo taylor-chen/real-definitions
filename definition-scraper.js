@@ -4,8 +4,10 @@ var request = require('request');
 var cheerio = require('cheerio');
 var app     = express();
 
-app.get('/scrape', function(req, res){
-    url = 'http://www.urbandictionary.com/define.php?term=test';
+var port = process.env.PORT || 8081;
+
+app.get('/', function(req, res){
+    url = 'http://www.urbandictionary.com/define.php?term=bob';
 
     request(url, function(error, response, html){
         if(!error){
@@ -20,10 +22,8 @@ app.get('/scrape', function(req, res){
             })
 
         }
-        res.send(json)
+        res.send(json);
     })
 })
 
-app.listen('8081')
-console.log('Port working!');
-exports = module.exports = app; 
+app.listen(port);
