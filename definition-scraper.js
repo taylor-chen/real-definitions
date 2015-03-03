@@ -6,8 +6,8 @@ var app     = express();
 
 var port = process.env.PORT || 8081;
 
-app.get('/', function(req, res){
-    url = 'http://www.urbandictionary.com/define.php?term=bob';
+app.get('/([a-z]+)', function(req, res){
+    url = 'http://www.urbandictionary.com/define.php?term=' + req.url.substr(1,req.url.length);
 
     request(url, function(error, response, html){
         if(!error){
