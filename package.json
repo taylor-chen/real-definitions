@@ -1,0 +1,13 @@
+{
+  "name"         : "real-definitions",
+  "version"      : "0.0.1",
+  "description"  : "Scrape all the definitions",
+  "main"         : "definition-scraper.js",
+  "author"       : "Taylor",
+  "private"      : true,
+  "dependencies" : {
+    "express"    : "latest",
+    "request"    : "latest",
+    "cheerio"    : "latest"
+  }
+}
