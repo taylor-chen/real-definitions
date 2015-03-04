@@ -3,7 +3,7 @@
   "version"      : "0.0.1",
   "description"  : "Scrape all the definitions",
   "main"         : "definition-scraper.js",
-  "author"       : "Taylor",
+  "author"       : "Taylor Chen",
   "private"      : true,
   "dependencies" : {
     "express"    : "latest",
