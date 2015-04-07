@@ -6,5 +6,3 @@ You can play around with it yourself:
 3. `npm install`  
 5. `node definition-scraper.js`  
 5. Go to localhost:8081/*[term you want to search]* in a browser
-
-Currently a work in progress.
